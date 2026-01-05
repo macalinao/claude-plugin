@@ -23,6 +23,13 @@ Expert TypeScript agent for non-React code with:
 - One function per file pattern
 - Kebab-case file naming
 
+### check-and-fix
+
+Runs TypeScript checks and linting, automatically fixing all errors:
+- Runs `bun run typecheck` and `bun run lint:fix`
+- Fixes remaining errors manually
+- Verifies all tests pass
+
 ## Commands
 
 ### /commit-push-pr
@@ -32,21 +39,20 @@ Commits all changes, pushes, and creates a pull request. Automatically:
 - Creates feature branches when needed
 - Reuses existing PRs when possible
 
+### /check-and-fix
+
+Runs TypeScript and lint checks, fixing all errors automatically.
+
 ## Installation
 
-### Quick Testing (session only)
+### From GitHub
 
 ```bash
-claude --plugin-dir ~/proj/macalinao/claude-plugin/igm-plugin
-```
+# Clone the repository
+git clone https://github.com/macalinao/claude-plugin.git
 
-This loads the plugin for the current session only.
-
-### Permanent Installation
-
-```bash
 # Add the marketplace
-claude plugin marketplace add /path/to/claude-plugin
+claude plugin marketplace add ~/path/to/claude-plugin
 
 # Install the plugin
 claude plugin install igm@igm-plugins
