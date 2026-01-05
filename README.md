@@ -1,4 +1,4 @@
-# macalinao Claude Plugin
+# igm Claude Plugin
 
 Personal Claude Code plugin with coding agents and commands.
 
@@ -34,8 +34,22 @@ Commits all changes, pushes, and creates a pull request. Automatically:
 
 ## Installation
 
+### Quick Testing (session only)
+
 ```bash
-claude plugins install ~/proj/macalinao/claude-plugin
+claude --plugin-dir ~/proj/macalinao/claude-plugin/igm-plugin
 ```
 
-Or add to your Claude Code settings.
+This loads the plugin for the current session only.
+
+### Permanent Installation
+
+```bash
+# Add the marketplace
+claude plugin marketplace add /path/to/claude-plugin
+
+# Install the plugin
+claude plugin install igm@igm-plugins
+```
+
+Then restart Claude Code for changes to take effect.

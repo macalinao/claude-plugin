@@ -1,0 +1,13 @@
+{
+  "name": "igm-plugins",
+  "owner": {
+    "name": "Ian Macalinao"
+  },
+  "plugins": [
+    {
+      "name": "igm",
+      "source": "./igm-plugin",
+      "description": "Personal Claude Code plugin with coding agents and commands"
+    }
+  ]
+}
