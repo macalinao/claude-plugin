@@ -7,6 +7,7 @@ Personal Claude Code plugin with coding agents and commands.
 ### react-stack-engineer
 
 Expert React agent for writing, reviewing, and refactoring React code with:
+
 - React + TypeScript + Vite
 - Tailwind CSS v4
 - React Query (TanStack Query)
@@ -17,6 +18,7 @@ Expert React agent for writing, reviewing, and refactoring React code with:
 ### typescript-stack-engineer
 
 Expert TypeScript agent for non-React code with:
+
 - TypeScript strict mode
 - Bun runtime and test runner
 - Zod validation
@@ -26,6 +28,7 @@ Expert TypeScript agent for non-React code with:
 ### check-and-fix
 
 Runs TypeScript checks and linting, automatically fixing all errors:
+
 - Runs `bun run typecheck` and `bun run lint:fix`
 - Fixes remaining errors manually
 - Verifies all tests pass
@@ -35,6 +38,7 @@ Runs TypeScript checks and linting, automatically fixing all errors:
 ### /commit-push-pr
 
 Commits all changes, pushes, and creates a pull request. Automatically:
+
 - Detects if on main/master branch
 - Creates feature branches when needed
 - Reuses existing PRs when possible
@@ -47,7 +51,7 @@ Runs TypeScript and lint checks, fixing all errors automatically.
 
 ```bash
 # Add the marketplace
-claude plugin marketplace add github:macalinao/claude-plugin
+claude plugin marketplace add macalinao/claude-plugin
 
 # Install the plugin
 claude plugin install igm@igm-plugins
