@@ -45,14 +45,9 @@ Runs TypeScript and lint checks, fixing all errors automatically.
 
 ## Installation
 
-### From GitHub
-
 ```bash
-# Clone the repository
-git clone https://github.com/macalinao/claude-plugin.git
-
 # Add the marketplace
-claude plugin marketplace add ~/path/to/claude-plugin
+claude plugin marketplace add github:macalinao/claude-plugin
 
 # Install the plugin
 claude plugin install igm@igm-plugins
