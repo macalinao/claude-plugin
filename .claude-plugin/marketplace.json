@@ -2,7 +2,7 @@
   "name": "igm-plugins",
   "owner": {
     "name": "Ian Macalinao",
-    "email": "ian@macalinao.com"
+    "email": "me@ianm.com"
   },
   "plugins": [
     {
@@ -10,7 +10,7 @@
       "description": "Personal Claude Code plugin with coding agents and commands",
       "author": {
         "name": "Ian Macalinao",
-        "email": "ian@macalinao.com"
+        "email": "me@ianm.com"
       },
       "source": "./igm-plugin",
       "category": "productivity"
