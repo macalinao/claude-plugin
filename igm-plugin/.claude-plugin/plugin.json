@@ -4,5 +4,6 @@
   "author": {
     "name": "Ian Macalinao",
     "email": "ian@macalinao.com"
-  }
+  },
+  "agents": "./agents/"
 }
