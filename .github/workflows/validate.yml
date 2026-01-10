@@ -1,0 +1,32 @@
+name: Validate Plugins
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+
+      - name: Install Claude CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Validate root plugin
+        run: claude plugin validate .
+
+      - name: Validate igm-plugin
+        run: claude plugin validate ./igm-plugin
+
+      - name: Add marketplace
+        run: claude plugin marketplace add $(pwd)/
+
+      - name: Install igm-plugin
+        run: claude plugin install igm@igm-plugins

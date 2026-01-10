@@ -17,7 +17,7 @@ Then fix remaining errors:
    - Understanding the error context
    - Making the necessary code changes to resolve the errors
 2. If there are any remaining linting errors that couldn't be auto-fixed, manually fix them
-3. Run both `bun run typecheck` and `bun run lint` again to verify all errors are resolved. IF THE ERRORS ARE NOT RESOLVED, REPEAT THE ENTIRE PROCESS.
+3. Run both `bun run typecheck` and `bun run lint:fix` again to verify all errors are resolved. IF THE ERRORS ARE NOT RESOLVED, REPEAT THE ENTIRE PROCESS.
 4. Run `bun run test` in the root to ensure no tests were broken.
 5. Provide a summary of what was fixed
 
